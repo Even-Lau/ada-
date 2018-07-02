@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <script type="text/javascript" src="js/rem.js"></script>
+    <link type="text/css" rel="stylesheet" href="css/layout.css">
+    <style>
+        .clear {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .study-subTab-group {
+            position: relative;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .study-subTab-menu {
+            width: 6.5rem;
+            padding: 0.2rem 0.3rem;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+
+        .study-subTab-item {
+            display: inline-block;
+            height: 0.52rem;
+            line-height: 0.52rem;
+            text-align: center;
+            margin-right: 0.3rem;
+            background-color: #efeff4;
+            border-radius: 0.03rem;
+        }
+
+        .study-subTab-item.active {
+            background-color: #004d9d;
+        }
+
+        .study-subTab-href {
+            display: block;
+            height: 100%;
+            padding: 0 0.26rem;
+        }
+
+        .study-subTab-txt {
+            font-size: 0.3rem;
+            color: #1a1a1a;
+        }
+
+        .study-subTab-item.active .study-subTab-txt {
+            color: #fff;
+        }
+
+        .study-content-menu {
+            padding: 0 0.3rem;
+        }
+
+        .study-content-item {
+            padding: 0.3rem 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .study-content-left {
+            float: left;
+            width: 2.4rem;
+            height: 1.8rem;
+            border-radius: 0.04rem;
+            background-color: #efeff4;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .study-content-right {
+            float: right;
+            width: 4.29rem;
+        }
+
+        .study-content-title {
+            width: 100%;
+            line-height: 0.5rem;
+            white-space: nowrap;
+            overflow-x: hidden;
+            text-overflow: ellipsis;
+            font-size: 0.3rem;
+            color: #1a1a1a;
+        }
+
+        .study-content-para {
+            width: 100%;
+            line-height: 0.38rem;
+            margin-top: 0.07rem;
+            font-size: 0.26rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+        }
+
+        .study-content-time {
+            line-height: 0.38rem;
+            font-size: 0.26rem;
+            margin-top: 0.05rem;
+            color: #989898;
+        }
+
+        .study-subTab-icon {
+            width: 1.04rem;
+            height: 100%;
+            background-color: #ffffff;
+            -webkit-box-shadow: -3px 0 5px rgba(0, 0, 0, 0.2);
+            box-shadow: -3px 0 5px rgba(0, 0, 0, 0.2);
+            position: absolute;
+            right: 0;
+            top: 0;
+            background-image: url("images/study-subTab-icon.png");
+            background-size: 0.4rem 0.32rem;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        #studyChooseChannels {
+            position: fixed;
+            left: 100%;
+            top: 0;
+            z-index: 1;
+            background: #efeff4;
+            height: 100%;
+        }
+        #studyChooseChannels.leftToRight{
+            animation-name: leftToRight;
+            animation-duration: 300ms;
+            animation-fill-mode: forwards;
+        }
+        @keyframes leftToRight {
+            from {left: 100%;}
+            to {left: 0;}
+        }
+
+
+        .header[data-v-0f66b2fc] {
+            width: 100%;
+            height: 0.88rem;
+            background-color: #004d9d;
+            position: relative;
+        }
+        .back[data-v-0f66b2fc] {
+            width: 0.88rem;
+            height: 100%;
+            background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAmCAYAAADAzmuWAAAAGXRFW…77vHjxTuXmdV1p4159KkivnAMFXn4quCE98wWoAO3/BRgArhHLIW8TMIkAAAAASUVORK5CYII=) center center no-repeat;
+            background-size: 0.22rem 0.38rem;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .title[data-v-0f66b2fc] {
+            width: 100%;
+            padding: 0 0.88rem;
+            line-height: 0.88rem;
+            color: #fff;
+            text-align: center;
+            font-size: 0.4rem;
+            max-width: 8rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .right[data-v-0f66b2fc] {
+            min-width: 0.88rem;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        .sCC-menu {
+            padding: 0.30rem;
+            background-color: #fff;
+        }
+        .sCC-item {
+            width: 1.50rem;
+            height: 0.70rem;
+            line-height: 0.70rem;
+            text-align: center;
+            border-radius: 0.04rem;
+            background-color: #f0f2f5;
+            float: left;
+            margin-right: 0.30rem;
+            margin-bottom: 0.30rem;
+            position: relative;
+        }
+        .sCC-item-name {
+            border-radius: 0.04rem;
+        }
+        .sCC-item-name.checked {
+            background-color: #fff;
+            color: #004d9d;
+        }
+        .sCC-item-ipt {
+            -webkit-appearance: none;
+            width: 100%;
+            height: 100%;
+            border-radius: 0.04rem;
+            background-color: transparent;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .sCC-item-ipt:checked {
+            border: 1px solid #004d9d;
+            background-image: url("images/sCC-item-ipt.png");
+            background-size: 0.36rem 0.36rem;
+            background-position: right bottom;
+            background-repeat: no-repeat;
+        }
+        .sCC-footer-wrapper {
+            width: 100%;
+            padding: 0.30rem;
+            background-color: #fff;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+        }
+        .sCC-footer {
+            width: 100%;
+            height: 0.88rem;
+            line-height: 0.88rem;
+            text-align: center;
+            border-radius: 0.06rem;
+            background-color: #004d9d;
+            color: #fff;
+            font-size: 0.36rem;
+        }
+    </style>
+</head>
+<body>
+<section class="study-subTab-group">
+    <ul class="study-subTab-menu">
+        <li class="study-subTab-item active"><a href="javascript:;" class="study-subTab-href"><span
+                class="study-subTab-txt">推荐1</span></a></li>
+        <li class="study-subTab-item"><a href="javascript:;" class="study-subTab-href"><span class="study-subTab-txt">推荐2</span></a>
+        </li>
+        <li class="study-subTab-item"><a href="javascript:;" class="study-subTab-href"><span class="study-subTab-txt">推荐3</span></a>
+        </li>
+        <li class="study-subTab-item"><a href="javascript:;" class="study-subTab-href"><span class="study-subTab-txt">推荐4</span></a>
+        </li>
+    </ul>
+    <div class="study-subTab-icon"></div>
+</section>
+<section class="study-content-group">
+    <ul class="study-content-menu">
+        <li class="study-content-item clear">
+            <div class="study-content-left"
+                 style="background-image: url(&quot;/static/img/study-content-left.b79a7cf.png&quot;);"></div>
+            <div class="study-content-right"><h4 class="study-content-title">高保真播放器为你解决音源问题</h4>
+                <p class="study-content-para">电子设备的进步，车主对原车主机的要求也越来越高。导航、行车、倒…</p>
+                <p class="study-content-time">发布时间：2018.08.08</p></div>
+        </li>
+    </ul>
+</section>
+<div id="studyChooseChannels" class="">
+    <div data-v-0f66b2fc="" id="header">
+        <div data-v-0f66b2fc="" class="header">
+            <div data-v-0f66b2fc="" class="back"></div>
+            <div data-v-0f66b2fc="" class="title">选择频道</div>
+            <div data-v-0f66b2fc="" class="right"></div>
+        </div>
+    </div>
+    <ul class="sCC-menu clear">
+        <li class="sCC-item">
+            <div class="sCC-item-name checked">推荐1</div>
+            <input type="checkbox" class="sCC-item-ipt"></li>
+        <li class="sCC-item">
+            <div class="sCC-item-name">推荐2</div>
+            <input type="checkbox" class="sCC-item-ipt"></li>
+        <li class="sCC-item">
+            <div class="sCC-item-name">推荐3</div>
+            <input type="checkbox" class="sCC-item-ipt"></li>
+        <li class="sCC-item">
+            <div class="sCC-item-name">推荐4</div>
+            <input type="checkbox" class="sCC-item-ipt"></li>
+    </ul>
+    <footer class="sCC-footer-wrapper">
+        <div class="sCC-footer">确定</div>
+    </footer>
+</div>
+<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+<script>
+    $(".study-subTab-icon").click(function () {
+        $("#studyChooseChannels").addClass("leftToRight");
+    });
+    $(".sCC-footer").click(function () {
+        $(this).parents("#studyChooseChannels").removeClass("leftToRight")
+    })
+</script>
+</body>
+</html>

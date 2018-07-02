@@ -1,0 +1,3991 @@
+html {
+    color: #000;
+    background: #fff;
+    overflow-y: scroll;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+html * {
+    outline: 0;
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    box-sizing: border-box;
+    position: relative;
+}
+
+html, body {
+    font-family: '微软雅黑', "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+    line-height: 1;
+    font-size: 0.3rem;
+    color: #333;
+    min-height: 100%;
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    margin: 0;
+    padding: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+    display: block;
+}
+
+input, select, textarea {
+    font-size: 100%;
+}
+
+input, textarea, button {
+    border: none;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    -webkit-appearance: none;
+    display: block;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+fieldset, img {
+    border: 0;
+}
+
+img, i {
+    display: block;
+}
+
+address, caption, cite, code, dfn, em, th, var {
+    font-style: normal;
+    font-weight: 500;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    word-break: break-all;
+}
+
+::placeholder {
+    font-family: '微软雅黑', "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+    color: #999;
+}
+
+.clear:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.none {
+    display: none;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+/***************************************************首页***************************************************************/
+.tk_index {
+    /*padding-top: 0.88rem;*/
+}
+
+.tk_indexBanner {
+    height: 3.60rem;
+}
+
+.tk_indexBannerImg {
+    width: 100%;
+    height: 100%;
+}
+
+.tk_idxMsgWrapper {
+    height: 0.88rem;
+    padding: 0.24rem 0.3rem;
+    background-color: #f7eede;
+    border-bottom: 1px solid #f8e5c4;
+}
+
+.tk_idxMsg {
+    width: 6.36rem;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    color: #c2871d;
+    overflow-x: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.tk_idxMsgIcon {
+    width: 0.84rem;
+    height: 100%;
+    background: url("../images/delete.png") no-repeat center;
+    background-size: 0.24rem 0.24rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 3;
+}
+
+.tk_idxNav {
+    padding: 0.04rem 0 0.6rem;
+}
+
+.tk_idxNavItem {
+    width: 25%;
+    padding-top: 0.56rem;
+    text-align: center;
+    float: left;
+}
+
+.tk_idxNavHref {
+    display: block;
+}
+
+.tk_idxNavIcon {
+    width: 1.2rem;
+    height: 1.2rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 auto;
+}
+
+.tk_idxNavTxt {
+    display: block;
+    line-height: 0.36rem;
+    margin-top: 0.16rem;
+    color: #333;
+}
+
+/***************************************************01投诉表扬-投诉***************************************************************/
+.tk_complain {
+    /*padding-top: 0.88rem;*/
+    min-height: 100%;
+    padding-top: 0.20rem;
+    padding-bottom: 1.2rem;
+    background-color: #f2f2f2;
+}
+
+.tk_compHeader {
+    width: 100%;
+    height: 0.88rem;
+    background-color: #252525;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+
+.tk_compHBack {
+    width: 0.62rem;
+    height: 100%;
+    background-image: url("../images/headerBack.png");
+    background-size: 0.2rem 0.35rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.tk_compHTitle {
+    line-height: 0.88rem;
+    text-align: center;
+    font-size: 0.36rem;
+    color: #fff;
+}
+
+.tk_compHMore {
+    width: 0.99rem;
+    height: 100%;
+    background-image: url("../images/headerMore.png");
+    background-size: 0.43rem 0.1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.tk_compBtnWrapper {
+    width: 100%;
+    height: 1.2rem;
+    border-top: 1px solid #ddd;
+    padding: 0.19rem 0.3rem 0.2rem;
+    background-color: #fff;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.tk_compBtn {
+    width: 100%;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    text-align: center;
+    border-radius: 0.38rem;
+    color: #fff;
+    background-color: #ff6405;
+    font-size: 0.36rem;
+}
+
+.tk_compPopUpWrapper {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 3;
+}
+
+.tk_compPopUp {
+    width: 6.3rem;
+    background-color: #fff;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 0.04rem;
+}
+
+.tk_compPopUpMsg {
+    text-align: center;
+    margin: 0.6rem 0;
+}
+
+.tk_compPopUpBtnWrapper {
+    height: 1.4rem;
+    border-top: 1px solid #ddd;
+    padding: 0.29rem 0.3rem 0 0.3rem;
+}
+
+.tk_compPopUpBtn {
+    width: 2.7rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    text-align: center;
+    font-size: 0.36rem;
+    color: #fff;
+    background-color: #ff6405;
+    border-radius: 0.4rem;
+    margin: 0 auto;
+}
+
+.tk_compItem {
+    padding: 0.2rem 0.3rem;
+    line-height: 0.46rem;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin-top: 0.2rem;
+}
+
+.tk_compItem:first-child {
+    margin-top: 0;
+}
+
+.tk_compItemN {
+    float: left;
+}
+
+.tk_compItNStar {
+    color: #ff0000;
+}
+
+.tk_compItemD {
+    float: right;
+}
+
+.tk_compItemC {
+    float: right;
+}
+
+.tk_compItemCTxt {
+    color: #999;
+    float: left;
+    margin-right: 0.11rem;
+}
+
+.tk_compItemCTxtIpt {
+    height: 100%;
+    color: #333;
+    background-color: #fff;
+    float: left;
+    margin-right: 0.11rem;
+    text-align: right;
+    margin-top: 0.05rem;
+}
+
+.tk_compItemCTxtIpt::placeholder {
+    color: #999;
+}
+
+.tk_compItemCTxt.on {
+    color: #333;
+}
+
+.tk_compItemCTxt.on {
+    color: #333;
+}
+
+.tk_compItCIcon {
+    width: 0.16rem;
+    height: 0.24rem;
+    background-image: url("../images/back.png");
+    background-size: 0.16rem 0.24rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    float: right;
+    margin-top: 0.11rem;
+}
+
+.tk_compItCMenu {
+    width: 100%;
+    line-height: 0.6rem;
+    border-top: 1px solid #ddd;
+    padding: 0.19rem 0.3rem 0.2rem;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    top: 0.88rem;
+    z-index: 2;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
+}
+
+.tk_compItCItem {
+    border-bottom: 1px dashed #ddd;
+}
+
+.tk_compCont {
+    padding: 0 0.3rem;
+    background-color: #fff;
+    margin-top: 0.2rem;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.tk_compCTxaWrapper {
+    padding: 0.3rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.tk_compCTxa {
+    width: 100%;
+    height: 2rem;
+}
+
+.tk_compCTxa::placeholder {
+    color: #999;
+}
+
+.tk_compCNum {
+    color: #999;
+    position: absolute;
+    right: 0;
+    bottom: 0.3rem;
+}
+
+.tk_compCDeo {
+    padding: 0.28rem 0;
+}
+
+.tk_compCDAudio, .tk_compCDVideo, .tk_compCDCamera {
+    width: 0.44rem;
+    height: 0.44rem;
+    border: 1px solid #666;
+    border-radius: 0.06rem;
+    float: left;
+    margin-right: 0.44rem;
+    background-image: url("../images/tk_compCDeo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1.26rem 0.42rem;
+}
+
+.tk_compCDAudio input, .tk_compCDVideo input, .tk_compCDCamera input {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.tk_compCDAudio {
+    background-position: 0 0;
+}
+
+.tk_compCDVideo {
+    background-position: -0.42rem 0;
+}
+
+.tk_compCDCamera {
+    background-position: -0.84rem 0;
+}
+
+.tk_compPicWrapper {
+    margin-top: 0.2rem;
+}
+
+.tk_compPic {
+    padding: 0.3rem 0.3rem;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.tk_compPicItem {
+    float: left;
+    width: 1.56rem;
+    height: 1.56rem;
+    margin-right: 0.22rem;
+    margin-bottom: 0.2rem;
+    /*background-image: url("../images/tk_compCDeo.png");*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.tk_compPicItem:nth-child(4n) {
+    margin-right: 0;
+}
+
+.tk_compPicItMsg {
+    padding: 0.3rem;
+    background-color: #fff;
+}
+
+.tk_RTopPicItemVCanvas {
+    width: 100%;
+    height: 100%;
+}
+
+.tk_compPicItVideo {
+    width: 100%;
+    height: 100%;
+}
+
+.tk_compPicItAudio {
+    width: 100%;
+    height: 100%;
+}
+
+.tk_compVideoPlay {
+    background-image: url("../images/videoPlay.png");
+    background-size: .2rem .24rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, .5);
+    width: .6rem;
+    height: .6rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: .4rem;
+}
+
+.tk_compPopUp2Wrapper {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 3;
+}
+
+.tk_compPopUp2 {
+    width: 6.3rem;
+    background-color: #fff;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 0.04rem;
+}
+
+.tk_compPopUp2Title {
+    height: 0.9rem;
+    line-height: 0.9rem;
+    text-align: center;
+    color: #fff;
+    background-color: #ff6405;
+    font-size: 0.36rem;
+}
+
+.tk_compPopUp2Menu {
+    max-height: 3.52rem;
+    overflow-y: auto;
+    padding: 0 0.3rem;
+}
+
+.tk_compPopUp2Item {
+    height: 0.88rem;
+    line-height: 0.88rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.tk_compPopUp2Item:last-child {
+    border-bottom: none;
+}
+
+.tk_compPopUp2ItName {
+    float: left;
+}
+
+.tk_compPopUp2ItIpt {
+    -webkit-appearance: none;
+    width: 0.4rem;
+    height: 0.4rem;
+    border: 1px solid #999;
+    border-radius: 50%;
+    float: right;
+    margin-top: 0.24rem;
+}
+
+.tk_compPopUp2ItIpt:checked {
+    border: none;
+    background-color: transparent;
+    background-image: url("../images/select_circle.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.tk_compPopUp2BtnWrapper {
+    height: 1.4rem;
+    border-top: 1px solid #ddd;
+    padding: 0.29rem 0.3rem 0 0.3rem;
+}
+
+.tk_compPopUp2Btn {
+    width: 2.7rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    text-align: center;
+    font-size: 0.36rem;
+    color: #fff;
+    background-color: #ff6405;
+    border-radius: 0.4rem;
+    margin: 0 auto;
+}
+
+.tk_compPopUp2Btn:nth-child(2) {
+    border: 1px solid #ddd;
+    background-color: #fff;
+    color: #333;
+}
+
+/***************************************************03通知通告-社区公告*************************************************/
+.tk_announcement {
+    /*padding-top: 1.76rem;*/
+    padding-top: 0.88rem;
+    min-height: 100%;
+}
+
+.tk_annTabWrapper {
+    width: 100%;
+    overflow: auto;
+    position: fixed;
+    left: 0;
+    /*top: 0.88rem;*/
+    top: 0;
+    z-index: 2;
+}
+
+.tk_annTabMenu {
+    width: 20rem;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.tk_annTab {
+    min-width: 2.5rem;
+    padding: 0 0.2rem;
+    height: 0.88rem;
+    line-height: 0.88rem;
+    text-align: center;
+    float: left;
+}
+
+.tk_annTab.on {
+    color: #ff6405;
+    border-bottom: 1px solid #ff6405;
+}
+
+.tk_annTabConItem {
+
+    border-bottom: 1px solid #ddd;
+}
+
+.tk_annTabConItHref {
+    display: block;
+    padding: 0.22rem 0.3rem;
+}
+
+.tk_annTabConItHref.past {
+    background-color: #f5f5f5;
+}
+
+.tk_annTabConItTxt {
+    line-height: 0.46rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.tk_annTabConItTime {
+    font-size: 0.28rem;
+    line-height: 0.36rem;
+    color: #999;
+    margin-top: 0.14rem;
+}
+
+.tk_annTabConItIcon {
+    width: 0.16rem;
+    height: 0.24rem;
+    background: url("../images/back.png") no-repeat center;
+    background-size: contain;
+    position: absolute;
+    right: 0.3rem;
+    top: 50%;
+    margin-top: -0.12rem;
+}
+
+.CSG-projectReport-contentNoMore {
+    width: 100%;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    color: #bbb;
+    background-color: #f5f5f5;
+    position: relative;
+}
+
+.CSG-projectReport-contentNoMore:before {
+    content: "";
+    display: block;
+    width: 1.95rem;
+    height: 1px;
+    background-color: #bbb;
+    position: absolute;
+    left: 0.25rem;
+    top: 0.3rem;
+}
+
+.CSG-projectReport-contentNoMore:after {
+    content: "";
+    display: block;
+    width: 1.95rem;
+    height: 1px;
+    background-color: #bbb;
+    position: absolute;
+    right: 0.25rem;
+    top: 0.3rem;
+}
+
+/***************************************************04通知通告-公告详情*************************************************/
+.tk_announcementDetail {
+    /*padding-top: 0.88rem;*/
+    padding-top: 0;
+}
+
+.tk_annDet {
+    width: 100%;
+    height: 12.24rem;
+    background: url("../images/tk_annDet_bg.png") no-repeat center;
+    background-size: contain;
+}
+
+/***************************************************05话题*************************************************/
+.tk_topic {
+    padding-top: 0.88rem;
+    padding-bottom: 1.3rem;
+    background-color: #f2f2f2;
+}
+
+.tk_topTabOuterWrapper {
+    width: 100%;
+    height: 0.88rem;
+    overflow: auto;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+
+.tk_topTabWrapper {
+    width: 30rem;
+    height: 0.88rem;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.tk_topTab {
+    min-width: 1.5rem;
+    padding: 0 0.2rem;
+    height: 0.88rem;
+    line-height: 0.88rem;
+    text-align: center;
+    font-size: 0.32rem;
+    float: left;
+}
+
+.tk_topTab.on {
+    color: #ff6405;
+    border-bottom: 1px solid #ff6405;
+}
+
+.tk_topTConItTop {
+    padding: 0.3rem 0.3rem 0 0.3rem;
+    background-color: #fff;
+}
+
+.tk_topTConItAvatar {
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    background: url("../images/tk_topTConItAvatar.png") no-repeat center;
+    background-size: contain;
+    float: left;
+}
+
+.tk_topTConItRight {
+    width: 5.9rem;
+    float: right;
+}
+
+.tk_topTConItName {
+    line-height: 0.4rem;
+    color: #ff6405;
+    margin-top: 0.05rem;
+}
+
+.tk_topTConItTime {
+    line-height: 0.3rem;
+    color: #999;
+    margin-top: 0.05rem;
+    font-size: 0.24rem;
+}
+
+.tk_topTConItNum {
+    color: #999;
+    position: absolute;
+    right: 0;
+    top: 0.28rem;
+}
+
+.tk_topTConItTxt {
+    line-height: 0.4rem;
+    margin-top: 0.2rem;
+    font-size: 0.28rem;
+}
+
+.tk_topTConItPicWrapper {
+    padding-top: 0.20rem;
+    padding-bottom: 0.20rem;
+}
+
+.tk_topTConItPic {
+    width: 1.90rem;
+    height: 1.90rem;
+    border-radius: 0.04rem;
+    background: url("../images/tk_topTConItPic.png") no-repeat center;
+    background-size: cover;
+    float: left;
+    margin-right: 0.1rem;
+    margin-bottom: 0.1rem;
+}
+
+.tk_topTConItPic:nth-child(3n) {
+    margin-right: 0;
+}
+
+.tk_topTConItComWrapper {
+    padding: 0.25rem 0.3rem;
+    border-top: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.tk_topTConItComIcon {
+    width: 0.32rem;
+    height: 0.32rem;
+    background-image: url(../images/topic.png);
+    background-size: 1.28rem 0.32rem;
+    background-repeat: no-repeat;
+    float: left;
+    margin-top: 0.05rem;
+}
+
+.tk_topTConItCom {
+    width: 6.3rem;
+    line-height: 0.38rem;
+    float: right;
+}
+
+.tk_topTConItComItem {
+    margin-bottom: 0.15rem;
+    font-size: 0.24rem;
+}
+
+.tk_topTConItComItem:last-child {
+    margin-bottom: 0;
+}
+
+.tk_topTConItCItName {
+    color: #ff6405;
+}
+
+.tk_topTConItTabWrapper {
+    padding: 0.2rem 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.tk_topTConItTab {
+    width: 33.333%;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    float: left;
+    border-right: 1px solid #ddd;
+    padding: 0 0.69rem;
+}
+
+.tk_topTConItTab:last-child {
+    border-right: none;
+}
+
+.tk_topTConItTIcon {
+    width: 0.31rem;
+    height: 0.32rem;
+    background-image: url("../images/topic.png");
+    background-size: 1.28rem 0.32rem;
+    background-repeat: no-repeat;
+    float: left;
+    margin-top: 0.04rem;
+}
+
+.tk_topTConItTIcon.on {
+    background-image: url("../images/topic2.png");
+}
+
+.tk_topTConItTab:nth-child(1) .tk_topTConItTIcon {
+    background-position: 0 0;
+}
+
+.tk_topTConItTab:nth-child(2) .tk_topTConItTIcon {
+    background-position: -0.32rem 0;
+}
+
+.tk_topTConItTab:nth-child(3) .tk_topTConItTIcon {
+    background-position: -0.64rem 0;
+}
+
+.tk_topTConItTab:nth-child(4) .tk_topTConItTIcon {
+    background-position: -0.96rem 0;
+}
+
+.tk_topTConItTNum {
+    width: 0.57rem;
+    float: right;
+}
+
+.tk_topBtnWrapper {
+    width: 100%;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+.tk_topBtnItem {
+    float: left;
+    width: 50%;
+
+    border-right: 1px solid #ddd;
+}
+
+.tk_topBtnItem:last-child {
+    border-right: none;
+}
+
+.tk_topBtnItHref {
+    display: block;
+    padding: 0.24rem 0;
+}
+
+.tk_topBtn {
+    width: 1.6rem;
+    margin: 0 auto;
+}
+
+.tk_topBtnIcon {
+    width: 0.24rem;
+    height: 0.32rem;
+    background: url("../images/tk_topBtnIcon.png") no-repeat center;
+    background-size: contain;
+    float: left;
+    margin-top: 0.04rem;
+}
+
+.tk_topBtnItem:last-child .tk_topBtnIcon {
+    width: 0.28rem;
+    height: 0.30rem;
+    background-image: url("../images/tk_topBtnIcon2.png");
+}
+
+.tk_topBtnTxt {
+    line-height: 0.4rem;
+    color: #ff6405;
+    float: right;
+    font-size: 0.32rem;
+}
+
+.tk_topBtnMsg {
+    text-align: center;
+    color: #999;
+    font-size: 0.24rem;
+    line-height: 0.36rem;
+    margin-top: 0.05rem;
+}
+
+/***************************************************06发布话题*************************************************/
+.tk_RTopPicMenu {
+    padding-bottom: 0.25rem;
+}
+
+.tk_RTopPicItem {
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 0.03rem;
+    float: left;
+    margin-right: 0.16rem;
+    margin-bottom: 0.17rem;
+    background-image: url("../images/tk_topTConItPic.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.tk_RTopPicItemV {
+    width: 100%;
+    height: 4.0rem;
+    border-radius: 0.03rem;
+    float: left;
+    /*background-image: url("../images/tk_topTConItPic.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;*/
+}
+
+.tk_RTopPicItemA {
+    width: 100%;
+    height: 1.0rem;
+    border-radius: 0.03rem;
+    float: left;
+    /*background-image: url("../images/tk_topTConItPic.png");*/
+    /*background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;*/
+}
+
+.tk_RTopPicItem:nth-child(4n) {
+    margin-right: 0;
+}
+
+.tk_RTopPicItDelete {
+    width: 0.38rem;
+    height: 0.38rem;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    background-color: #ff6405;
+    position: absolute;
+    right: -0.09rem;
+    top: -0.09rem;
+}
+
+.tk_RTopPicItDelete:before {
+    content: "";
+    display: block;
+    width: 0.2rem;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -0.1rem;
+    margin-top: -0.01rem;
+}
+
+.RTopCTxaWrapper {
+    padding: 0.3rem 0;
+}
+
+.tk_RTopPicWrapper {
+    padding: 0 0.3rem;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+    margin-top: 0.2rem;
+}
+
+.tk_RTopPicTitle {
+    line-height: 0.86rem;
+}
+
+.tk_RTopPicItIptIcon {
+    width: 0.52rem;
+    height: 0.46rem;
+    background: url("../images/camera.png") no-repeat center;
+    background-size: contain;
+    margin: 0 auto;
+}
+
+.tk_RTopPicItIpt {
+    border: 1px dashed #999;
+    padding-top: 0.36rem;
+    background-image: none;
+}
+
+.tk_RTopPicItIptTxt {
+    text-align: center;
+    color: #999;
+    margin-top: 0.2rem;
+    font-size: 0.22rem;
+}
+
+.tk_RTopPicItIptInput {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/***************************************************07发布评论*************************************************/
+.tk_topPopUpWrapper {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 3;
+}
+
+.tk_topPopUp {
+    width: 6.3rem;
+    height: 4.7rem;
+    background-color: #fff;
+    border-radius: 0.03rem;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-left: -3.15rem;
+    margin-top: -2.35rem;
+}
+
+.tk_topPopUpTitle {
+    height: 0.9rem;
+    line-height: 0.9rem;
+    text-align: center;
+    color: #fff;
+    background-color: #ff6405;
+    font-size: 0.36rem;
+    border-top-left-radius: 0.03rem;
+    border-top-right-radius: 0.03rem;
+}
+
+.tk_topPopUpTAWrapper {
+    padding: 0.3rem;
+}
+
+.tk_topPopUpTA {
+    width: 100%;
+    height: 1.8rem;
+}
+
+.tk_topPopUpTA::placeholder {
+    color: #999;
+}
+
+.tk_topPopUpTANum {
+    color: #999;
+    position: absolute;
+    right: 0.3rem;
+    bottom: 0.3rem;
+}
+
+.tk_topPopUpBtnWrapper {
+    height: 1.4rem;
+    padding: 0.29rem 0.3rem 0 0.3rem;
+    border-top: 1px solid #ddd;
+}
+
+.tk_topPopUpBtnRe {
+    width: 2.7rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    text-align: center;
+    border-radius: 0.38rem;
+    color: #fff;
+    background-color: #ff6405;
+    font-size: 0.36rem;
+    float: left;
+}
+
+.tk_topPopUpBtnClose {
+    width: 2.7rem;
+    height: 0.8rem;
+    line-height: 0.78rem;
+    text-align: center;
+    border-radius: 0.38rem;
+    border: 1px solid #ddd;
+    font-size: 0.36rem;
+    float: right;
+}
+
+/***********************************************09我的投诉***********************************************************/
+.tk_myComplain {
+    /*padding-top: 1.76rem;*/
+    min-height: 100%;
+    padding-top: 0.88rem;
+    padding-bottom: 1.4rem;
+    background-color: #f2f2f2;
+}
+
+.tk_myRTopic {
+    min-height: 100%;
+    padding-top: 0.88rem;
+    background-color: #f2f2f2;
+}
+
+.tk_myRComment {
+    min-height: 100%;
+    padding-top: 0.88rem;
+    background-color: #f2f2f2;
+}
+
+.tk_mCTabWrapper {
+    width: 100%;
+    height: 0.88rem;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+
+.tk_mCTab {
+    width: 20%;
+    height: 0.88rem;
+    line-height: 0.88rem;
+    text-align: center;
+    font-size: 0.32rem;
+    float: left;
+}
+
+.tk_mCTabNum {
+    display: inline-block;
+    min-width: 0.24rem;
+    height: 0.24rem;
+    line-height: 0.24rem;
+    text-align: center;
+    padding: 0 0.05rem;
+    color: #fff;
+    background-color: #ff6405;
+    border-radius: 0.12rem;
+    font-size: 0.16rem;
+    position: absolute;
+    right: 0;
+    top: 0.10rem;
+}
+
+.tk_mCTab.on {
+    color: #ff6405;
+    border-bottom: 1px solid #ff6405;
+}
+
+.tk_mCTabWrapper2 {
+    width: 100%;
+    height: 0.88rem;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    display: flex;
+}
+
+.tk_mCTab2 {
+    flex: 1;
+    height: 0.88rem;
+    line-height: 0.88rem;
+    text-align: center;
+    font-size: 0.32rem;
+    float: left;
+}
+
+.tk_mCTab2.on {
+    color: #ff6405;
+    border-bottom: 1px solid #ff6405;
+}
+
+.tk_MCConItem {
+    line-height: 0.36rem;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.tk_MCConItem2 {
+    line-height: 0.36rem;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 0.30rem;
+}
+
+.tk_MCConItHref {
+    display: block;
+    padding: 0.25rem 0.3rem;
+    color: #333;
+}
+
+.tk_MCConItIcon {
+    width: 0.16rem;
+    height: 0.24rem;
+    background: url("../images/back.png") no-repeat center;
+    background-size: contain;
+    position: absolute;
+    right: 0.3rem;
+    top: 50%;
+    margin-top: -0.08rem;
+}
+
+.tk_MCConItTxt {
+    color: #999;
+    position: absolute;
+    right: 0.3rem;
+    top: 50%;
+    margin-top: -0.18rem;
+}
+
+.tk_MCConItTitle {
+    display: block;
+    width: 6.72rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.tk_MCFootWrapper {
+    width: 100%;
+    height: 1.2rem;
+    padding: 0.19rem 0.3rem 0;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+.tk_MCFoot {
+    width: 100%;
+    height: 0.8rem;
+    border: 1px solid #ff6405;
+    border-radius: 0.4rem;
+}
+
+.tk_MCFTxtWrapper {
+    width: 1.95rem;
+    height: 100%;
+    line-height: 0.78rem;
+    margin: 0 auto;
+}
+
+.tk_MCFIcon {
+    width: 0.32rem;
+    height: 0.32rem;
+    background-image: url("../images/edit.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    float: left;
+    margin-top: 0.24rem;
+}
+
+.tk_MCFTxt {
+    float: right;
+    font-size: 0.36rem;
+    color: #ff6405;
+}
+
+/***********************************************10投诉详情*******************************************************/
+.tk_complainD {
+    /*padding-top: 0.88rem;*/
+    padding-top: 0.2rem;
+    background-color: #f2f2f2;
+    min-height: 100%;
+}
+
+.tk_compDCTitle {
+    line-height: 0.46rem;
+}
+
+.tk_compDCPara {
+    line-height: 0.42rem;
+    margin-top: 0.12rem;
+    color: #666;
+    word-break: break-all;
+}
+
+.tk_CDPopUpWrapper {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 5;
+}
+
+.tk_CDPopUp {
+    width: 100%;
+    height: 5rem;
+    background-image: url("../images/tk_topTConItPic.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -2.5rem;
+}
+
+/***********************************************13我发布的话题*********************************************************/
+.tk_myRTTimeWrapper {
+    width: 100%;
+    padding: 0.22rem 0;
+    color: #fff;
+    background-color: #ff6405;
+    position: fixed;
+    left: 0;
+    /*top: 0.88rem;*/
+    top: 0;
+    z-index: 2;
+}
+
+.tk_myRTTime {
+    width: 3.6rem;
+    line-height: 0.44rem;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 0.38rem;
+}
+
+.tk_myRTTiIconL {
+    width: 0.44rem;
+    height: 0.44rem;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    background: url("../images/arrowLeftIcon.png") no-repeat 0.11rem center;
+    background-size: 0.14rem 0.22rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.tk_myRTTiIconR {
+    width: 0.44rem;
+    height: 0.44rem;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    background: url("../images/arrowRightIcon.png") no-repeat center;
+    background-size: 0.14rem 0.22rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/**********************************************17物品出入管理-列表*****************************************************/
+.tk_pML {
+    /*padding-top: 0.88rem;*/
+    padding-bottom: 1.4rem;
+    background-color: #f2f2f2;
+    min-height: 100%;
+}
+
+.tk_pMLItem {
+    padding: 0.2rem 0.3rem;
+    line-height: 0.46rem;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.tk_pMLSBtnWrapper {
+    width: 100%;
+    height: 1.2rem;
+    border-bottom: 1px solid #ddd;
+    padding: 0.19rem 0.3rem 0.2rem;
+    background-color: #fff;
+}
+
+.tk_pMLSBtn {
+    width: 100%;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    text-align: center;
+    border-radius: 0.04rem;
+    color: #fff;
+    background-color: #ff6405;
+    font-size: 0.36rem;
+}
+
+.tk_pMLTableWrapper {
+    padding: 0.3rem;
+    overflow-x: auto;
+}
+
+.tk_pMLTable {
+    width: 100%;
+    background-color: #fff;
+}
+
+.tk_pMLTaTheTrTh {
+    height: 0.8rem;
+    color: #fff;
+    background-color: #ff6405;
+    border: 1px solid #fff;
+}
+
+.tk_pMLTaTheTrThCheck {
+    width: 0.32rem;
+    height: 0.32rem;
+    vertical-align: middle;
+    -webkit-appearance: none;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.tk_pMLTaTheTrThCheck:checked {
+    background: url("../images/check.png") no-repeat center #fff;
+    background-size: 0.2rem 0.16rem;
+}
+
+.tk_pMLTaTboTr {
+    background-color: #fff;
+}
+
+.tk_pMLTaTboTr:nth-child(even) {
+    background-color: #eeeeee;
+}
+
+.tk_pMLTaTboTrTd {
+    height: 0.8rem;
+    text-align: center;
+    border: 1px solid #fff;
+}
+
+.tk_pMLTaTboTrTdCheck {
+    width: 0.32rem;
+    height: 0.32rem;
+    vertical-align: middle;
+    -webkit-appearance: none;
+    border: 1px solid #ddd;
+}
+
+.tk_pMLTaTboTrTdCheck:checked {
+    background: url("../images/check.png") no-repeat center;
+    background-size: 0.2rem 0.16rem;
+}
+
+.tk_pMLBtnWrapper {
+    width: 100%;
+    height: 1.2rem;
+    border-top: 1px solid #ddd;
+    padding: 0.19rem 0.3rem 0.2rem;
+    background-color: #fff;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
+.tk_pMLBtnNew {
+    width: 3.3rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    text-align: center;
+    border-radius: 0.38rem;
+    color: #fff;
+    background-color: #ff6405;
+    font-size: 0.36rem;
+    float: left;
+}
+
+.tk_pMLBtnDel {
+    width: 3.3rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 0.38rem;
+    background-color: #f5f5f5;
+    font-size: 0.36rem;
+    float: right;
+}
+
+/********************************************18物品出入管理-新建**************************************************/
+.tk_pMN {
+    /*padding-top: 0.88rem;*/
+    min-height: 100%;
+    padding-bottom: 1.4rem;
+    background-color: #f2f2f2;
+}
+
+.tk_pMLD {
+    min-height: 100%;
+    background-color: #f2f2f2;
+}
+
+.tk_pMC {
+    background-color: #f2f2f2;
+}
+
+.tk_pMDItemDIpt {
+    height: 0.46rem;
+    text-align: right;
+    float: right;
+}
+
+.tk_pMDItemDIpt::placeholder {
+    color: #999;
+}
+
+.tk_pMDItemDIptD {
+    width: 100%;
+    height: 0.46rem;
+    text-align: right;
+    float: right;
+    border: 1px solid #ddd;
+    -webkit-appearance: none;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+}
+
+.tk_pMDItemDIptT {
+    height: 0.46rem;
+    text-align: right;
+    float: right;
+    margin-right: 0.11rem;
+}
+
+.tk_pMDItemDIptT::placeholder {
+    color: #999;
+}
+
+.tk_compPopUp2ItPM {
+    float: right;
+}
+
+.tk_compPopUp2ItMinus {
+    float: left;
+    width: 0.44rem;
+    height: 0.44rem;
+    background-color: transparent;
+    background-position: center;
+    background-size: contain;
+    background-position: center;
+    background-image: url("../images/tk_compPopUp2ItMinus.png");
+    background-repeat: no-repeat;
+    margin-top: 0.23rem;
+}
+
+.tk_compPopUp2ItPMIptWrapper {
+    float: left;
+}
+
+.tk_compPopUp2ItPMIpt {
+    width: 0.88rem;
+    height: 0.44rem;
+    text-align: center;
+}
+
+.tk_compPopUp2ItPMIptVeil {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.tk_compPopUp2ItPlus {
+    float: left;
+    width: 0.44rem;
+    height: 0.44rem;
+    background-image: url("../images/tk_compPopUp2ItPlus.png");
+    background-color: transparent;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 0.23rem;
+}
+
+.tk_pMNMenuWrapper {
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+    margin-top: 0.2rem;
+}
+
+.tk_pMNAddWrapper {
+    padding: 0.30rem 0;
+    border-top: 1px solid #ddd;
+}
+
+.tk_pMNAdd {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.80rem;
+    height: 0.68rem;
+    border-radius: 0.34rem;
+    background-color: #ffe8da;
+    margin: 0 auto;
+}
+
+.tk_pMNAddIcon {
+    width: 0.30rem;
+    height: 0.30rem;
+    background-image: url("../images/tk_pMNAddIcon.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 0.12rem;
+}
+
+.tk_pMNAddTxt {
+    color: #ff6405;
+}
+.tk_pMNMenu {
+    padding: 0 0.3rem;
+}
+/**********************************************19物品出入管理-审批********************************************/
+.tk_pMLPopUpWrapper {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 3;
+}
+
+.tk_pMLPopUp {
+    width: 6.3rem;
+    height: 8.6rem;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -3.15rem;
+    margin-top: -4.3rem;
+}
+
+.tk_pMLPUpMenuWrapper {
+    height: 3.88rem;
+    padding: 0 0.3rem;
+    overflow-y: auto;
+}
+
+.tk_pMLPUpTit {
+    height: 0.9rem;
+    line-height: 0.9rem;
+    text-align: center;
+    color: #fff;
+    background-color: #ff6405;
+    font-size: 0.36rem;
+}
+
+.tk_pMLPUpTitIcon {
+    width: 0.88rem;
+    height: 100%;
+    background: url("../images/close.png") no-repeat center;
+    background-size: 0.28rem 0.28rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.tk_pMLPUpItem {
+
+    background: url("../images/tk_pMLPUpItem_bg.png") repeat-y 0.19rem center;
+    background-size: 1px 0.08rem;
+}
+
+.tk_pMLPUpItIcon {
+    width: 0.4rem;
+    height: 0.4rem;
+    border-radius: 50%;
+    background: url("../images/tk_pMLPUpItIcon.png") no-repeat center #609700;
+    background-size: 0.23rem 0.19rem;
+    float: left;
+    margin-right: 0.2rem;
+    margin-top: 0.3rem;
+}
+
+.tk_pMLPUpItR {
+    width: 4.8rem;
+    line-height: 0.4rem;
+    padding: 0.3rem 0 0.23rem;
+    border-bottom: 1px solid #ddd;
+    float: left;
+}
+
+.tk_pMLPUpItRSta {
+    color: #609700;
+}
+
+.tk_pMLPUpItRTime {
+    color: #a0a0a0;
+    float: right;
+}
+
+.tk_pMLPUpItRPara {
+    margin-top: 0.22rem;
+    font-size: 0.28rem;
+    color: #666;
+}
+
+.tk_pMLPUpItem.unPass .tk_pMLPUpItIcon {
+    background-color: #f10215;
+    background-image: url("../images/tk_pMLPUpItIcon2.png");
+    background-size: 0.06rem 0.26rem;
+}
+
+.tk_pMLPUpItem.unPass .tk_pMLPUpItRSta {
+    color: #f10215;
+}
+
+.tk_pMLPUpTxaWrapper {
+    padding: 0.3rem;
+}
+
+.tk_pMLPUpTxa {
+    width: 100%;
+    height: 1.72rem;
+    padding: 0.28rem;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+}
+
+.tk_pMLPUpTxa::placeholder {
+    color: #999;
+}
+
+.tk_pMLPUpBtnWrapper {
+    width: 100%;
+    height: 1.2rem;
+    padding: 0.3rem;
+    border-top: 1px solid #ddd;
+    padding: 0.19rem 0.3rem 0.2rem;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.tk_pMLPUpReject {
+    width: 2.7rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    text-align: center;
+    border-radius: 0.38rem;
+    color: #fff;
+    background-color: #f10215;
+    font-size: 0.36rem;
+    float: left;
+}
+
+.tk_pMLPUpAgree {
+    width: 2.7rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    text-align: center;
+    border-radius: 0.38rem;
+    color: #fff;
+    background-color: #ff6405;
+    font-size: 0.36rem;
+    float: right;
+}
+
+/***************************************************21物品出入管理-审批流程********************************************/
+.tk_pMAF {
+    /*padding: 0.88rem 0 0.66rem;*/
+    padding: 0 0 0.66rem;
+}
+
+.tk_pMAFFlowWrapper {
+    padding-top: 0.6rem;
+}
+
+.tk_pMAFFlItem {
+    padding: 0 0 0.1rem 0;
+}
+
+.tk_pMAFFlItAvatarWrapper {
+    width: 1.6rem;
+    margin: 0 auto;
+}
+
+.tk_pMAFFlItAvatarWrapper:before {
+    content: "";
+    display: block;
+    width: 0.22rem;
+    height: 0.64rem;
+    background: url("../images/arrow.png") no-repeat center;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.tk_pMAFFlItem:first-child .tk_pMAFFlItAvatarWrapper:before {
+    display: none;
+}
+
+.tk_pMAFFlItAvatar {
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    border: 2px solid #c99a62;
+    margin: 0.1rem auto 0;
+    background: url("../images/tk_topTConItAvatar.png") no-repeat center;
+    background-size: cover;
+}
+
+.tk_pMAFFlItIcon {
+    width: 0.4rem;
+    height: 0.4rem;
+    border-radius: 50%;
+    background: url("../images/tk_pMLPUpItIcon.png") no-repeat center #609700;
+    background-size: 0.23rem 0.19rem;
+    position: absolute;
+    right: -0.1rem;
+    top: 0;
+}
+
+.tk_pMAFFlItIcon.unPass {
+    background: url("../images/tk_pMLPUpItIcon2.png") no-repeat center #f10215;
+    background-size: 0.06rem 0.26rem;
+}
+
+.tk_pMAFFlItName {
+    width: 1.6rem;
+    height: 0.48rem;
+    line-height: 0.44rem;
+    text-align: center;
+    border-radius: 0.24rem;
+    color: #ff6405;
+    border: 0.02rem solid #ff6405;
+    font-size: 0.26rem;
+    margin: 0.1rem auto 0;
+}
+
+.tk_pMAFFlItemMeWrapper:before {
+    content: "";
+    display: block;
+    width: 0.04rem;
+    height: 0.4rem;
+    background-color: #ff6405;
+    margin: 0 auto;
+}
+
+.tk_pMAFFlItMenu {
+
+}
+
+.tk_pMAFFlItMenu:before {
+    content: "";
+    display: block;
+    width: calc(100% * 2 / 3);
+    height: 0.04rem;
+    background-color: #ff6405;
+    margin: 0 auto;
+}
+
+.tk_pMAFFlItMenu:after {
+    content: "";
+    display: block;
+    width: calc(100% * 2 / 3);
+    height: 3.1rem;
+    border-left: 0.04rem solid #ff6405;
+    border-right: 0.04rem solid #ff6405;
+    border-bottom: 0.04rem solid #ff6405;
+    margin: 0 auto;
+    /*position: absolute;
+    left: 50%;
+    bottom: 0;
+    margin-left: calc(-100%*2/3/2);*/
+}
+
+.tk_pMAFFlItItem {
+    width: 33.333%;
+    float: left;
+    padding: 0 0 0.1rem 0;
+}
+
+.tk_pMAFFlEndWrapper:before {
+    content: "";
+    display: block;
+    width: 0.22rem;
+    height: 0.64rem;
+    background: url("../images/arrow.png") no-repeat center;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.tk_pMAFFlEnd {
+    width: 4.8rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    text-align: center;
+    border-radius: 0.4rem;
+    font-size: 0.36rem;
+    color: #fff;
+    background-color: #ff6405;
+    margin: 0.1rem auto 0;
+}
+
+/************************************************22物品出入管理-物业确认**********************************************/
+.tk_pMLCBtnWrapper {
+    width: 100%;
+    height: 1.2rem;
+    border-top: 1px solid #ddd;
+    padding: 0.19rem 0.3rem 0.2rem;
+    background-color: #fff;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
+.tk_pMLCBtn {
+    width: 100%;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    text-align: center;
+    border-radius: 0.38rem;
+    color: #fff;
+    background-color: #ff6405;
+    font-size: 0.36rem;
+    float: left;
+}
+
+/************************************************01答写问卷-列表**********************************************/
+.tk_questionnaire {
+    /*padding-top: 1.76rem;*/
+    padding-top: 0.88rem;
+    background-color: #f2f2f2;
+    min-height: 100%;
+}
+
+.tk_topTabQWrapper {
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+    position: fixed;
+    left: 0;
+    /*top: 0.88rem;*/
+    top: 0;
+    z-index: 2;
+}
+
+.tk_topTabQ {
+    width: 50%;
+    height: 0.88rem;
+    line-height: 0.88rem;
+    text-align: center;
+    font-size: 0.32rem;
+    float: left;
+}
+
+.tk_topTabQ.on {
+    color: #ff6405;
+    border-bottom: 1px solid #ff6405;
+}
+
+.tk_quesMenu {
+    padding: 0.3rem 0.3rem;
+}
+
+.tk_quesList {
+    width: 100%;
+    padding-top: 0.12rem;
+    margin-bottom: 0.3rem;
+}
+
+.tk_quesList:before {
+    content: "";
+    display: block;
+    border-style: solid;
+    border-width: 0.06rem;
+    border-color: rgb(251, 251, 251);
+    border-radius: 0.13rem;
+    background-color: rgb(255, 100, 5);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 0.18rem;
+}
+
+.tk_quesLiCWrapper {
+    background-color: rgb(255, 255, 255);
+    background-image: -moz-linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(255, 100, 5) 100%), url("../images/tk_quesLiCWrapper_bg.png"), url("../images/tk_quesLiCWrapper_bg2.png");
+    background-image: -webkit-linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(255, 100, 5) 100%), url("../images/tk_quesLiCWrapper_bg.png"), url("../images/tk_quesLiCWrapper_bg2.png");
+    background-image: -ms-linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(255, 100, 5) 100%), url("../images/tk_quesLiCWrapper_bg.png"), url("../images/tk_quesLiCWrapper_bg2.png");
+    background-repeat: no-repeat, repeat-y, repeat-y;
+    background-position: top center, left top, right top;
+    background-size: 100% 0.1rem, 0.1rem 0.3rem, 0.1rem 0.3rem;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+    width: 6.50rem;
+    min-height: 4.18rem;
+    margin: 0 auto;
+}
+
+.tk_quesLiCWrapper:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 0.10rem;
+}
+
+.椭圆_1 {
+    border-radius: 50%;
+    background-color: rgb(242, 242, 242);
+    position: absolute;
+    left: 40px;
+    top: 270px;
+    width: 20px;
+    height: 20px;
+    z-index: 26;
+}
+
+.tk_quesLiCon {
+    width: 5.78rem;
+    margin: 0 auto;
+}
+
+.tk_quesLiCTitWrapper {
+    padding: 0.33rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.tk_quesLiCTit {
+    line-height: 0.4rem;
+
+}
+
+.tk_quesLiCTitB {
+    line-height: 0.36rem;
+    color: #666;
+    margin-top: 0.2rem;
+    font-size: 0.26rem;
+}
+
+.tk_quesLiCTitDetWrapper {
+    padding: 0.14rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.tk_quesLiCDeWrapper {
+    width: 50%;
+    font-size: 0.24rem;
+    line-height: 0.52rem;
+    float: left;
+}
+
+.tk_quesLiCTiN {
+    color: #666;
+}
+
+.tk_quesLiCBtnWrapper {
+    padding: 0.3rem 0;
+}
+
+.tk_quesLiCTxt {
+    float: left;
+    line-height: 0.6rem;
+    color: #666;
+}
+
+.tk_quesLiCTNum {
+    color: #ff6405;
+}
+
+.tk_quesLiCBtn {
+    border-radius: 0.29rem;
+    color: #fff;
+    background-color: rgb(255, 100, 5);
+    width: 2.00rem;
+    height: 0.60rem;
+    float: right;
+}
+
+/*****************************************************************************************************/
+.tk_quesDetail {
+    /*padding-top: 0.88rem;*/
+    padding-bottom: 1.2rem;
+}
+
+.tk_quesDTitle {
+    padding: 0.32rem 0;
+    line-height: 0.5rem;
+    text-align: center;
+    font-size: 0.36rem;
+    font-weight: 600;
+    color: #ff6405;
+}
+
+.tk_quesDMenu {
+    padding: 0 0.3rem;
+}
+
+.tk_quesDList {
+    padding: 0 0.3rem;
+    border: 1px solid #ddd;
+    border-radius: 0.08rem;
+    margin-bottom: 0.29rem;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+.tk_quesDListQ {
+    line-height: 0.48rem;
+    padding: 0.2rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.tk_quesDListO {
+    line-height: 0.48rem;
+    padding: 0.22rem 0;
+    font-size: 0.26rem;
+    color: #666;
+}
+
+.tk_quesDListOL {
+    padding-right: 0.6rem;
+    float: left;
+}
+
+.tk_quesDListOIpt {
+    width: 0.32rem;
+    height: 0.32rem;
+    -webkit-appearance: none;
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    border-radius: 0.04rem;
+    float: left;
+    margin-top: 0.08rem;
+    margin-right: 0.11rem;
+}
+
+.tk_quesDListOIpt:checked {
+    width: 0.32rem;
+    height: 0.32rem;
+    -webkit-appearance: none;
+    background-color: #ff6405;
+    background-image: url("../images/tk_pMLPUpItIcon.png");
+    background-repeat: no-repeat;
+    background-size: 0.23rem 0.19rem;
+    background-position: center;
+    border: none;
+}
+
+.tk_quesDListOIptR {
+    width: 0.32rem;
+    height: 0.32rem;
+    -webkit-appearance: none;
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    float: left;
+    margin-top: 0.08rem;
+    margin-right: 0.11rem;
+}
+
+.tk_quesDListOIptR:checked {
+    width: 0.32rem;
+    height: 0.32rem;
+    -webkit-appearance: none;
+    background-color: #ff6405;
+    background-image: url("../images/tk_pMLPUpItIcon.png");
+    background-repeat: no-repeat;
+    background-size: 0.23rem 0.19rem;
+    background-position: center;
+    border: none;
+}
+
+.tk_quesDListTxaWrapper {
+    padding: 0.3rem 0;
+}
+
+.tk_quesDListTxa {
+    width: 100%;
+    height: 1.6rem;
+}
+
+.tk_quesDListTxa::placeholder {
+    color: #666;
+}
+
+.tk_quesDBtnWrapper {
+    width: 100%;
+    padding: 0.19rem 0.3rem 0.2rem;
+    font-size: 0.36rem;
+    border-top: 1px solid #ddd;
+    background-color: #fff;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
+.tk_quesDBtnSave {
+    width: 3.3rem;
+    height: 0.8rem;
+    line-height: 0.78rem;
+    text-align: center;
+    border: 1px solid #ddd;
+    background-color: #f2f2f2;
+    border-radius: 0.4rem;
+    float: left;
+}
+
+.tk_quesDBtnSaSub {
+    width: 3.3rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    text-align: center;
+    color: #fff;
+    background-color: #ff6405;
+    border-radius: 0.4rem;
+    float: right;
+}
+
+/****************************************************登录*************************************************************/
+.tk_login {
+    height: 100%;
+    /*padding-top: 0.88rem;*/
+
+    background-color: #f6f7f9;
+}
+
+.tk_mPassword {
+    height: 100%;
+    padding-top: 0.2rem;
+    background-color: #f6f7f9;
+}
+
+.tk_logAvatarWrapper {
+    height: 3.40rem;
+    padding-top: 0.87rem;
+    background-color: rgb(255, 100, 5);
+}
+
+.tk_logAvatar {
+    width: 1.66rem;
+    height: 1.66rem;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 3px 10px 0px rgba(0, 159, 228, 0.35);
+    background: url("../images/avatar.png") no-repeat center;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.tk_logMenu {
+    /*margin-top: 0.2rem;*/
+    border-top: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.tk_logItem {
+    height: 0.96rem;
+    padding: 0.3rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.tk_logItem.last {
+    padding-right: 0;
+}
+
+.tk_logItName {
+    float: left;
+}
+
+.tk_logIpt {
+    width: 5.40rem;
+    float: right;
+}
+
+.tk_logIpt::placeholder {
+    color: #cccccc;
+}
+
+.tk_logIptV {
+    width: 3.10rem;
+    float: right;
+}
+
+.tk_logIptV::placeholder {
+    color: #cccccc;
+}
+
+.tk_logItNameVCode {
+    width: 2.6rem;
+    height: 0.94rem;
+    line-height: 0.94rem;
+    text-align: center;
+    border-left: 1px solid #ddd;
+    float: right;
+    margin-top: -0.3rem;
+    /*background: url("../images/VCode.png") no-repeat center;
+    background-size: cover;*/
+    font-size: 0.36rem;
+    color: #ff6405;
+}
+
+.tk_logPassWrapper {
+    color: #ff6405;
+    padding: 0.4rem 0.3rem;
+}
+
+.tk_logPassL {
+    float: left;
+}
+
+.tk_logPaCheck {
+    -webkit-appearance: none;
+    width: 0.36rem;
+    height: 0.36rem;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    float: left;
+    margin-right: 0.2rem;
+}
+
+.tk_logPaCheck:checked {
+    border: none;
+    background-image: url("../images/select_circle.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.tk_logPassHref {
+    float: right;
+    color: #ff6405;
+}
+
+.Rounded_Rectangle_4 {
+    border-radius: 8px;
+    background-color: rgb(255, 100, 5);
+    position: absolute;
+    left: 30px;
+    top: 892px;
+    width: 690px;
+    height: 80px;
+    z-index: 46;
+}
+
+.tk_logBtnWrapper {
+    padding: 0 0.3rem;
+}
+
+.tk_logBtn {
+    width: 100%;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    text-align: center;
+    color: #fff;
+    background-color: #ff6405;
+    border-radius: 0.08rem;
+    font-size: 0.32rem;
+}
+
+.tk_logBtnWrapper {
+    padding: 0 0.3rem;
+    margin-top: 0.4rem;
+}
+
+.tk_mpBtn {
+    width: 100%;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    text-align: center;
+    color: #fff;
+    background-color: #fabc97;
+    border-radius: 0.08rem;
+    font-size: 0.32rem;
+}
+
+.tk_mpItNameVCode {
+    width: 2.6rem;
+    height: 0.94rem;
+    line-height: 0.94rem;
+    text-align: center;
+    border-left: 1px solid #ddd;
+    float: right;
+    margin-top: -0.3rem;
+    color: #ff6405;
+}
+
+.tk_mpItNameVCode.on {
+    color: #cccccc;
+}
+
+/****************************************************登录新版*************************************************************/
+.tk_loginN {
+    min-height: 100%;
+    background-image: url("../images/login_bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 1.85rem;
+}
+
+.tk_logNLogoHref {
+    display: block;
+    padding: 0.9rem 0;
+}
+
+.tk_logNLogo {
+    width: 2.80rem;
+    height: 1.60rem;
+    margin: 0 auto;
+}
+
+.tk_loginNMain {
+    width: 6.50rem;
+    border-radius: 0.12rem;
+    padding: 0 0.50rem 0.60rem;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.tk_loginNTitle {
+    line-height: 1.48rem;
+    text-align: center;
+    color: #ff6405;
+    font-size: 0.40rem;
+    font-weight: bold;
+}
+
+.tk_logItemN {
+    height: 0.88rem;
+    margin-bottom: 0.30rem;
+}
+
+.tk_logIptN {
+    width: 100%;
+    height: 100%;
+    padding: 0 0.3rem;
+    border: 1px solid #ddd;
+    border-radius: 0.12rem;
+    background-color: #fff;
+}
+
+.tk_logIptNVeil {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.tk_logIptNVeil:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 0.16rem solid #999;
+    border-left: 0.10rem solid transparent;
+    border-right: 0.10rem solid transparent;
+    background-color: transparent;
+    position: absolute;
+    right: 0.30rem;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.tk_logIptNV {
+    width: 3.10rem;
+    height: 100%;
+    padding: 0 0.3rem;
+    border: 1px solid #ddd;
+    border-radius: 0.12rem;
+    background-color: #fff;
+    float: left;
+}
+
+.tk_logItNNameVCode {
+    width: 1.80rem;
+    height: 100%;
+    line-height: 0.86rem;
+    text-align: center;
+    float: right;
+    font-size: 0.36rem;
+    color: #ff6405;
+    padding: 0 0.3rem;
+    border: 1px solid #ddd;
+    border-radius: 0.12rem;
+    background-color: #fff;
+    float: right;
+}
+
+.tk_logItNNameVCode2 {
+    height: 100%;
+    line-height: 0.86rem;
+    text-align: center;
+    float: right;
+    font-size: 0.32rem;
+    color: #fff;
+    padding: 0 0.3rem;
+    border-radius: 0.12rem;
+    background-color: #ff6405;
+    float: right;
+}
+
+.tk_logNPassWrapper {
+    color: #ff6405;
+    padding: 0 0.3rem;
+}
+
+.tk_logNBtnWrapper {
+    padding: 0 0.3rem;
+    margin-top: 0.3rem;
+}
+
+.tk_logNBtnWrapper2 {
+    margin-top: 0.3rem;
+}
+
+.tk_logNBtn {
+    width: 100%;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    text-align: center;
+    color: #fff;
+    background-color: #ff6405;
+    border-radius: 0.08rem;
+    font-size: 0.32rem;
+}
+
+.tk_logNBtn2 {
+    width: 100%;
+    height: 0.8rem;
+    line-height: 0.78rem;
+    text-align: center;
+    color: #333333;
+    border: 0.01rem solid #333;
+    background-color: transparent;
+    border-radius: 0.08rem;
+    font-size: 0.32rem;
+}
+
+/************************************************05_02公用话题-评论列表************************************************/
+.tk_topD2 {
+    padding-bottom: 1.3rem;
+    background-color: #f2f2f2;
+}
+
+.tk_topD2TabOuterWrapper {
+    width: 100%;
+    height: 0.88rem;
+    overflow: auto;
+    margin-top: 0.2rem;
+}
+
+.tk_topD2TabWrapper {
+    width: 100%;
+    height: 0.88rem;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.tk_topD2Tab {
+    width: 33.333%;
+    height: 0.88rem;
+    line-height: 0.88rem;
+    text-align: center;
+    font-size: 0.32rem;
+    float: left;
+}
+
+.tk_topD2Tab.on {
+    color: #ff6405;
+    border-bottom: 1px solid #ff6405;
+}
+
+.tk_topD2TConItTabWrapper {
+    width: 100%;
+    padding: 0.2rem 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+.tk_topD2TConItTab {
+    width: 33.333%;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    float: left;
+    border-right: 1px solid #ddd;
+    padding: 0 0.69rem;
+}
+
+.tk_topD2TConItTab:last-child {
+    border-right: none;
+}
+
+.tk_topD2TConItTIcon {
+    width: 0.32rem;
+    height: 0.32rem;
+    background-image: url("../images/topic.png");
+    background-size: 1.28rem 0.32rem;
+    background-repeat: no-repeat;
+    float: left;
+    margin-top: 0.04rem;
+}
+
+.tk_topD2TConItTIcon.on {
+    background-image: url("../images/topic2.png");
+}
+
+.tk_topD2TConItTab:nth-child(1) .tk_topD2TConItTIcon {
+    background-position: 0 0;
+}
+
+.tk_topD2TConItTab:nth-child(2) .tk_topD2TConItTIcon {
+    background-position: -0.32rem 0;
+}
+
+.tk_topD2TConItTab:nth-child(3) .tk_topD2TConItTIcon {
+    background-position: -0.64rem 0;
+}
+
+.tk_topD2TConItTNum {
+    width: 0.57rem;
+    float: right;
+}
+
+.tk_topD2TabContent {
+    padding: 0 0.3rem;
+    background-color: #fff;
+}
+
+.tk_topD2TabCItem {
+    padding: 0.3rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.tk_topD2TabCItem:last-child {
+    border-bottom: none;
+}
+
+.tk_topD2TaCItAvatarWrapper {
+    line-height: 0.8rem;
+}
+
+.tk_topD2TaCItAvatar {
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    background: url(../images/tk_topTConItAvatar.png) no-repeat center;
+    background-size: contain;
+    float: left;
+    margin-right: 0.2rem;
+}
+
+.tk_topD2TaCItName {
+    float: left;
+    font-size: 0.3rem;
+}
+
+.tk_topD2TaCItTime {
+    float: right;
+    font-size: 0.24rem;
+}
+
+.tk_topD2TaCItComment {
+    line-height: 0.38rem;
+    margin-top: 0.13rem;
+}
+
+/****************************************24我的消息**************************************************/
+
+.tk_mMTabWrapper {
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+    position: fixed;
+    left: 0;
+    /*top: 0.88rem;*/
+    top: 0;
+    z-index: 2;
+}
+
+.tk_mMTab {
+    width: 50%;
+    height: 0.88rem;
+    line-height: 0.88rem;
+    text-align: center;
+    float: left;
+}
+
+.tk_mMTab.on {
+    color: #ff6405;
+    border-bottom: 1px solid #ff6405;
+}
+
+.tk_mMTabConItem {
+    padding: 0.3rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.tk_mMTabConItIcon {
+    width: 0.8rem;
+    height: 0.8rem;
+    background-image: url("../images/tk_mMTabConItIcon.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    float: left;
+}
+
+.tk_annTabConItR {
+    width: 5.96rem;
+    float: right;
+}
+
+.tk_annTConItRTitle {
+    font-size: 0.3rem;
+}
+
+.tk_annTConItRTime {
+    line-height: 0.3rem;
+    font-size: 0.26rem;
+    color: #a1a1a1;
+}
+
+.tk_annTabConItRTxt {
+    width: 100%;
+    line-height: 0.34rem;
+    font-size: 0.28rem;
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    margin-top: 0.17rem;
+    color: #666;
+}
+
+/******************************************01_02投诉表扬-投诉审核****************************************************/
+.tk_complainC {
+    padding-top: 0.2rem;
+    background-color: #f2f2f2;
+    padding-bottom: 2.28rem;
+}
+
+.tk_cCFooterWrapper {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 3;
+    box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.tk_cCFIptWrapper {
+    height: 0.88rem;
+    padding: 0 0.3rem;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.tk_cCFIpt {
+    width: 100%;
+    height: 100%;
+}
+
+.tk_cCFBtnWrapper {
+    height: 1.2rem;
+    padding: 0.19rem 0.3rem 0 0.3rem;
+    background-color: #fff;
+}
+
+.tk_cCFBtn {
+    width: 3.3rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    text-align: center;
+    border-radius: 0.4rem;
+    float: left;
+}
+
+.tk_cCFBtn:nth-child(1) {
+    color: #ff6405;
+    border: 1px solid #ff6405;
+    float: left;
+}
+
+.tk_cCFBtn:nth-child(2) {
+    color: #fff;
+    background-color: #ff6405;
+    float: right;
+}
+
+/****************************************************33话题管理*******************************************************/
+.tk_topicManagement {
+    min-height: 100%;
+    background-color: #f2f2f2;
+}
+
+.tk_tMMenu {
+    background-color: #fff;
+}
+
+.tk_tMItem {
+    border-bottom: 1px solid #ddd;
+}
+
+.tk_tMItHref {
+    display: block;
+    padding: 0.3rem;
+    color: #333;
+    line-height: 0.68rem;
+    background-image: url("../images/back2.png");
+    background-repeat: no-repeat;
+    background-position: 7.04rem center;
+    background-size: 0.16rem 0.28rem;
+}
+
+.tk_tMItIcon {
+    display: block;
+    width: 0.68rem;
+    height: 0.68rem;
+    float: left;
+    margin-right: 0.29rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.tk_tMItem:nth-child(1) .tk_tMItIcon {
+    background-image: url("../images/tk_tMItIcon1.png");
+}
+
+.tk_tMItem:nth-child(2) .tk_tMItIcon {
+    background-image: url("../images/tk_tMItIcon2.png");
+}
+
+.tk_tMItem:nth-child(3) .tk_tMItIcon {
+    background-image: url("../images/tk_tMItIcon3.png");
+}
+
+.tk_tMItem:nth-child(4) .tk_tMItIcon {
+    background-image: url("../images/tk_tMItIcon4.png");
+}
+
+.tk_tMItTxt {
+    font-size: 0.3rem;
+}
+
+/********************************************访客管理******************************************************/
+.tk_vM {
+    min-height: 100%;
+    padding-bottom: 1.2rem;
+    background-color: #f2f2f2;
+}
+
+.tk_vList {
+    min-height: 100%;
+    background-color: #f2f2f2;
+}
+
+.tk_vMSBtnWrapper {
+    width: 100%;
+    height: 1.2rem;
+    border-bottom: 1px solid #ddd;
+    padding: 0.19rem 0.3rem 0.2rem;
+    border-top: 1px solid #ddd;
+    background-color: #fff;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+.tk_vMSBtn {
+    width: 100%;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    text-align: center;
+    border-radius: 0.4rem;
+    color: #fff;
+    background-color: #ff6405;
+    font-size: 0.36rem;
+}
+
+.tk_vMBtnWrapper {
+    width: 100%;
+    padding: 0.22rem 2.24rem;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    position: fixed;
+    left: 0;
+    bottom: 1.2rem;
+}
+
+.tk_vMBtnNew {
+    -webkit-appearance: none;
+    float: left;
+    min-width: 1.34rem;
+    height: 0.66rem;
+    line-height: 0.66rem;
+    border-radius: 0.33rem;
+    padding: 0 0.38rem;
+    color: #ff6405;
+    background-color: #fff;
+    border: 1px solid #ff6405;
+    font-size: 0.3rem;
+}
+
+.tk_vMBtnDelete {
+    -webkit-appearance: none;
+    float: right;
+    min-width: 1.34rem;
+    height: 0.66rem;
+    line-height: 0.66rem;
+    border-radius: 0.33rem;
+    padding: 0 0.38rem;
+    color: #ff6405;
+    background-color: #fff;
+    border: 1px solid #ff6405;
+    font-size: 0.3rem;
+}
+
+.tk_pMLTaTboTrTdHref {
+    display: block;
+    width: 0.4rem;
+    height: 0.24rem;
+    margin: 0 auto;
+    background-image: url("../images/tk_pMLTaTboTrTdHref.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.tk_pMLTaTboTrTdHref.edit {
+    width: 0.31rem;
+    height: 0.31rem;
+    background-image: url("../images/tk_pMLTaTboTrTdHrefEdit.png");
+}
+
+.tk_pMLTaTboTrTdHref.unCheck {
+    width: 0.31rem;
+    height: 0.31rem;
+    background-image: url("../images/tk_uncheck.png");
+}
+
+.tk_vMPopUpWrapper {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 3;
+}
+
+.tk_vMPopUp {
+    width: 6.3rem;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.tk_vMPopUpTit {
+    height: 0.9rem;
+    line-height: 0.9rem;
+    text-align: center;
+    font-size: 0.36rem;
+    color: #fff;
+    background-color: #ff6405;
+}
+
+.tk_vMPopUpBtnWrapper {
+    padding: 0.3rem;
+}
+
+.tk_vMPopUpBtnN {
+    display: block;
+    width: 2.7rem;
+    height: 0.8rem;
+    text-align: center;
+    line-height: 0.8rem;
+    color: #fff;
+    background-color: #ff6405;
+    border-radius: 0.4rem;
+    font-size: 0.36rem;
+    float: left;
+}
+
+.tk_vMPopUpBtnF {
+    display: block;
+    width: 2.7rem;
+    height: 0.8rem;
+    text-align: center;
+    line-height: 0.78rem;
+    color: #333;
+    border: 1px solid #d7d7d7;
+    border-radius: 0.4rem;
+    font-size: 0.36rem;
+    float: right;
+}
+
+/*************************************************访客申请***************************************************/
+.tk_vA2 {
+    min-height: 100%;
+    padding-bottom: 1.37rem;
+    background-color: #f2f2f2;
+}
+
+/*************************************************访客申请详情***************************************************/
+.tk_vADPicPara {
+    line-height: 0.42rem;
+    padding-bottom: 0.4rem;
+    color: #666;
+}
+
+/**************************************************访客申请_新建***************************************************/
+.tk_vADPicTxaWrapper {
+    padding-bottom: 0.3rem;
+}
+
+.tk_vADPicTxa {
+    width: 100%;
+    height: 2rem;
+}
+
+.tk_vAFooter {
+    width: 100%;
+    padding: 0.3rem 0.23rem;
+    border-top: 1px solid #ddd;
+    background-color: #fff;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+.tk_vAFooCancel {
+    width: 2.2rem;
+    height: 0.8rem;
+    line-height: 0.78rem;
+    border: 1px solid #ddd;
+    border-radius: 0.4rem;
+    color: #999;
+    background-color: #fff;
+    font-size: 0.36rem;
+    float: left;
+    margin-right: 0.2rem;
+}
+
+.tk_vAFooSave {
+    width: 2.2rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    border-radius: 0.4rem;
+    color: #fff;
+    background-color: #fe8941;
+    font-size: 0.36rem;
+    float: left;
+}
+
+.tk_vAFooSS {
+    width: 2.2rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    border-radius: 0.4rem;
+    color: #fff;
+    background-color: #ff6405;
+    font-size: 0.36rem;
+    float: right;
+}
+
+/**************************************************访客登录***************************************************/
+.tk_vL {
+    min-height: 100%;
+    background-color: #f6f7f9;
+}
+
+.tk_vLBanner {
+    width: 100%;
+    height: 3.4rem;
+    background-image: url("../images/tk_vLBanner.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.tk_vLMenu {
+    border-top: 1px solid #ddd;
+    margin-top: 0.2rem;
+}
+
+.tk_vLItem {
+    height: 0.95rem;
+    padding: 0 0.3rem;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.tk_vLItNum {
+    width: 100%;
+    height: 100%;
+}
+
+.tk_vLItCode {
+    width: 5.16rem;
+    height: 100%;
+    float: left;
+}
+
+.tk_vLItBtnWrapper {
+    float: right;
+    margin-top: 0.11rem;
+}
+
+.tk_vLItBtn {
+    width: 1.63rem;
+    height: 0.74rem;
+    line-height: 0.74rem;
+    text-align: center;
+    border-radius: 0.1rem;
+    color: #fff;
+    background-color: #ff6405;
+    font-size: 0.24rem;
+
+}
+
+.tk_vLItVeil {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.tk_vLBtn {
+    width: 6.90rem;
+    height: 0.80rem;
+    line-height: 0.80rem;
+    text-align: center;
+    border-radius: 0.1rem;
+    color: #fff;
+    background-color: #ff6405;
+    font-size: 0.32rem;
+    margin: 0.41rem auto 0;
+}
+
+/********************************************访客列表**********************************************/
+.tk_vLiTableWrapper {
+    overflow-x: auto;
+}
+
+.tk_vMPopUpMsgOuterWrapper {
+    padding: 0.37rem 0 0.45rem;
+}
+
+.tk_vMPopUpMsgInnerWrapper {
+    width: 3.95rem;
+    margin: 0 auto;
+    line-height: 0.58rem;
+}
+
+.tk_vMPopUpMsgIcon {
+    display: block;
+    width: 0.5rem;
+    height: 0.58rem;
+    background-image: url("../images/tk_vMPopUpMsgIcon.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    float: left;
+    margin-right: 0.28rem;
+}
+
+.tk_vMPopUpMsg {
+    color: #999;
+}
+
+/********************************************访客确认**********************************************/
+.tk_vADPicMenu {
+    padding-bottom: 0.4rem;
+}
+
+.tk_vADPicItem {
+    width: 1.6rem;
+    height: 1.6rem;
+    float: left;
+    margin: 0 0.49rem 0 0;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #eeeeee;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.tk_vADPicItem:last-child {
+    margin-right: 0;
+    background-image: url("../images/tk_vADPicItemExample.png");
+}
+
+.tk_vADPicItem:last-child:after {
+    content: "示范效果";
+    display: block;
+    width: 100%;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    position: absolute;
+    left: 0;
+    bottom: -0.4rem;
+    color: #999;
+    font-size: 0.22rem;
+}
+
+.tk_vADPicItem:last-child.another {
+    background-image: url("../images/tk_vADPicItemExample2.png");
+    background-size: cover;
+}
+
+.tk_vADPicItIcon {
+    display: block;
+    width: 0.52rem;
+    height: 0.46rem;
+    margin: 0.36rem auto 0.20rem;
+    background-image: url("../images/tk_vADPicItIcon.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.tk_vADPicItTxt {
+    font-size: 0.22rem;
+    color: #999999;
+}
+
+.tk_vADPicItIpt {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+.tk_vCMsgWrapper {
+    line-height: 0.44rem;
+    padding: 0.15rem 0.3rem;
+}
+
+.tk_vCMsgIcon {
+    width: 0.44rem;
+    height: 0.44rem;
+    background-image: url("../images/tk_vCMsgIcon.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    float: left;
+    margin-right: 0.17rem;
+}
+
+.tk_vCMsg {
+    color: #999999;
+    font-size: 0.24rem;
+    float: left;
+}
+
+.tk_vCPopUpWrapper {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 3;
+}
+
+.tk_vCPopUp {
+    width: 6.3rem;
+    background-color: #fff;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 0.04rem;
+}
+
+.tk_vCPopUpTitle {
+    height: 0.90rem;
+    line-height: 0.90rem;
+    text-align: center;
+    font-size: 0.36rem;
+    color: #fff;
+    background-color: #ff6405;
+}
+
+.tk_vCPopUpImg {
+    width: 1.12rem;
+    height: 1.12rem;
+    margin: 0.80rem auto 0;
+}
+
+.tk_vCPopUpMsg {
+    color: #999999;
+    text-align: center;
+    margin: 0.4rem 0 0.78rem;
+}
+
+.tk_vCPopUpBtnWrapper {
+    height: 1.4rem;
+    border-top: 1px solid #ddd;
+    padding: 0.29rem 0.3rem 0 0.3rem;
+}
+
+.tk_vCPopUpBtn {
+    width: 2.7rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    text-align: center;
+    font-size: 0.36rem;
+    color: #fff;
+    background-color: #ff6405;
+    border-radius: 0.4rem;
+    margin: 0 auto;
+}
+
+/*************************************************************************************************/
+.tk_vANew {
+    min-height: 100%;
+    padding-bottom: 1.37rem;
+    background-color: #f2f2f2;
+}
+
+/********************************************访客申请审批*****************************************************/
+.tk_vAAPopUp2TxaWrapper {
+    padding: 0.3rem;
+}
+
+.tk_vAAPopUp2Txa {
+    width: 100%;
+    height: 1.8rem;
+}
+
+/*********************************************常用访客列表****************************************************/
+.tk_vFLTable {
+    width: 100%;
+    background-color: #fff;
+}
+
+.tk_vFLTaTboTrTdHref {
+    display: block;
+    width: 0.42rem;
+    height: 0.42rem;
+    margin: 0 auto;
+    background-image: url("../images/tk_vFLTaTboTrTdHref.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+/***************************************************我的信息***************************************************************/
+.tk_myInfo {
+    min-height: 100%;
+    background-color: #f4f4f4;
+}
+
+.tk_mITop {
+    padding: 0.30rem;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.tk_mITLeft {
+    float: left;
+    line-height: 1.20rem;
+}
+
+.tk_mITAvatar {
+    width: 1.20rem;
+    height: 1.20rem;
+    border-radius: 50%;
+    background-image: url("../images/tk_mITAvatar.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    float: right;
+}
+
+.tk_mIItem {
+    height: 0.88rem;
+    line-height: 0.86rem;
+    padding: 0 0.30rem;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin-top: 0.20rem;
+}
+
+.tk_mIItLeft {
+    float: left;
+}
+
+.tk_mIItRight {
+    float: right;
+    color: #999999;
+}
+
+.tk_mIBtnWrapper {
+    padding: 0.6rem 0.3rem 0;
+}
+
+.tk_mIBtn {
+    width: 100%;
+    height: 0.88rem;
+    color: #fff;
+    background-color: rgb(255, 100, 5);
+    border-radius: 0.44rem;
+    font-size: 0.36rem;
+}
+
+/***************************************************20物品出入管理-申请-详请***************************************************************/
+.tk_pMAD {
+    min-height: 100%;
+    background-color: #f2f2f2;
+    padding-bottom: 1.28rem;
+}
+
+.tk_pMADPopUpWrapper {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 3;
+}
+
+.tk_pMADPopUp {
+    width: 6.3rem;
+    background-color: #fff;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 0.04rem;
+}
+
+.tk_pMADPopUpTitle {
+    height: 0.90rem;
+    line-height: 0.90rem;
+    text-align: center;
+    font-size: 0.36rem;
+    color: #fff;
+    background-color: #ff6405;
+}
+
+.tk_pMADPUpTWrapper {
+    padding: 0.15rem 0.30rem;
+}
+
+.tk_pMADPUpTxa {
+    width: 100%;
+    height: 2.00rem;
+}
+
+.tk_pMADPopUpBtnWrapper {
+    height: 1.4rem;
+    border-top: 1px solid #ddd;
+    padding: 0.29rem 0.3rem 0 0.3rem;
+}
+
+.tk_pMADPopUpBtn {
+    width: 2.7rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    text-align: center;
+    font-size: 0.36rem;
+    color: #fff;
+    background-color: #ff6405;
+    border-radius: 0.4rem;
+    margin: 0 auto;
+}
+
+.tk_pMADPopUpBtn:nth-child(1) {
+    float: left;
+}
+
+.tk_pMADPopUpBtn:nth-child(2) {
+    float: right;
+    line-height: 0.78rem;
+    color: #333333;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+/**********************************************************报障服务************************************************************/
+.tk_MCConItem3 {
+    line-height: 0.36rem;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin-top: 0.30rem;
+}
+
+.tk_MCConItHref2 {
+    display: block;
+    padding: 0 0.3rem;
+    color: #333;
+}
+
+.tk_MCConItTop {
+    height: 0.88rem;
+    line-height: 0.88rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.tk_MCConItL {
+    float: left;
+    color: #666666;
+}
+
+.tk_MCConItR {
+    float: left;
+    width: 5.35rem;
+}
+
+.tk_MCCItRTxt {
+    float: left;
+}
+
+.tk_MCCItRState {
+    float: right;
+}
+
+.tk_MCConItMenu {
+    padding: 0.14rem 0;
+}
+
+.tk_MCConItMenu2 {
+    padding: 0 0 0.14rem;
+}
+
+.tk_MCConItItem {
+    line-height: 0.56rem;
+}
+
+.tk_MCConItPara {
+    word-break: break-all;
+}
+
+.tk_MCCItRSTxt {
+    float: left;
+}
+
+.tk_MCCItRSTxt.toBeDone {
+    color: #f10215;
+}
+
+.tk_MCCItRSTxt.processing {
+    color: #ff6405;
+}
+
+.tk_MCCItRSTxt.toBeComment {
+    color: #4da0f0;
+}
+
+.tk_MCCItRSTxt.done {
+    color: #609700;
+}
+
+.tk_MCCItRSIcon {
+    float: left;
+    display: block;
+    width: 0.16rem;
+    height: 0.28rem;
+    background-image: url("../images/back2.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 0.29rem;
+    margin-left: 0.15rem;
+}
+
+/**********************************************************申请信息************************************************************/
+.tk_apIBtnWrapper {
+    width: 100%;
+    height: 1.2rem;
+    border-top: 1px solid #ddd;
+    background-color: #fff;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
+.tk_apIBtnL {
+    width: 61.33%;
+    padding: 0.19rem 0 0.2rem 0.3rem;
+    float: left;
+}
+
+.tk_apIBtnR {
+    width: 38.67%;
+    height: 100%;
+    line-height: 1.20rem;
+    text-align: center;
+    color: #fff;
+    background-color: #ff6405;
+    font-size: 0.36rem;
+    float: right;
+}
+
+.tk_apIBtnLWrap {
+    width: 4.0rem;
+    height: 0.8rem;
+    line-height: 0.78rem;
+    padding-left: 1.03rem;
+    border-radius: 0.38rem;
+    color: #666666;
+    border: 1px solid #666;
+    font-size: 0.36rem;
+}
+
+.tk_apIBtnLIcon {
+    display: inline-block;
+    width: 0.36rem;
+    height: 0.36rem;
+    background-image: url("../images/tk_apIBtnLIcon.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0.55rem;
+    top: 50%;
+    margin-top: -0.18rem;
+}
+
+/**********************************************************申请信息-待评价************************************************************/
+.tk_MCCItStateWrap {
+    width: 100%;
+    height: 100%;
+}
+
+.tk_MCCItState {
+    height: 0.56rem;
+    line-height: 0.54rem;
+    padding-left: 0.47rem;
+    padding-right: 0.14rem;
+    border: 1px solid #ddd;
+    border-radius: 0.08rem;
+    background-position: 0.13rem center;
+    background-size: 0.28rem 0.28rem;
+    background-repeat: no-repeat;
+}
+
+.tk_MCCItState.satisfy0 {
+    background-image: url("../images/tk_MCCItStateSa0.png");
+    margin-right: 0.34rem;
+}
+
+.tk_MCCItState.satisfy {
+    background-image: url("../images/tk_MCCItStateSa.png");
+    margin-right: 0.34rem;
+}
+
+.tk_MCCItState.general {
+    background-image: url("../images/tk_MCCItStateNor.png");
+}
+
+.tk_MCCItState.disappoint {
+    background-image: url("../images/tk_MCCItStateDis.png");
+}
+
+.tk_MCCItState.satisfy0.current {
+    color: #fff;
+    background-color: #ff6405;
+    border: none;
+    background-image: url("../images/tk_MCCItStateSa0Current.png");
+}
+
+.tk_MCCItState.satisfy.current {
+    color: #fff;
+    background-color: #ff6405;
+    border: none;
+    background-image: url("../images/tk_MCCItStateSaCurrent.png");
+}
+
+.tk_MCCItState.general.current {
+    color: #fff;
+    background-color: #ff6405;
+    border: none;
+    background-image: url("../images/tk_MCCItStateNorCurrent.png");
+}
+
+.tk_MCCItState.disappoint.current {
+    color: #fff;
+    background-color: #ff6405;
+    border: none;
+    background-image: url("../images/tk_MCCItStateDisCurrent.png");
+}
+
+.tk_aITCTxa {
+    width: 100%;
+    height: 2rem;
+    padding: 0.10rem 0.15rem;
+    background-color: #f5f5f5;
+    border: 1px solid #e5e5e5;
+    border-radius: 0.10rem;
+}
+
+.tk_MCCItStIpt {
+    width: 100%;
+    height: 100%;
+    -webkit-appearance: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.tk_MCCItStIpt:checked {
+    background-color: transparent;
+}
+
+/*****************************************报障申请-审核任务***********************************************/
+.tk_censor {
+    padding: 0.30rem 0;
+    background-color: #f2f2f2;
+    min-height: 100%;
+}
+
+.tk_MCConItem4 {
+    line-height: 0.36rem;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 0.30rem;
+}
+
+.tk_MCConItem4:last-child {
+    margin-bottom: 0;
+}
+
+/*****************************************报障申请-审核任务***********************************************/
+.tk_MCConItem5 {
+    line-height: 0.36rem;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 0.30rem;
+    margin-top: 0.30rem;
+}
+
+/*****************************************审核任务-工程师指派***********************************************/
+.tk_aTTaTboTrTdIpt {
+    -webkit-appearance: none;
+    width: 0.46rem;
+    height: 0.46rem;
+    border-radius: 50%;
+    border: 1px solid #686868;
+}
+
+.tk_aTTaTboTrTdIpt:checked {
+    background-color: transparent;
+    background-image: url("../images/checked2.png");
+    background-size: 0.38rem 0.38rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid #686868;
+}
+
+.tk_aTPopUpIWrap {
+    padding-top: 0.68rem;
+}
+
+.tk_aTPopUpIcon {
+    display: block;
+    width: 3.06rem;
+    height: 1.44rem;
+    margin: 0 auto;
+    background-image: url("../images/tk_aTPopUpIcon.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.tk_aTPopUpMsgWrap {
+    padding: 0.42rem 0 0.22rem;
+}
+
+.tk_aTPopUpMsg {
+    line-height: 0.48rem;
+    text-align: center;
+    font-size: 0.32rem;
+}
+
+/*****************************************报障处理***********************************************/
+.tk_bDHItRState {
+    float: right;
+    width: 1.60rem;
+    height: 0.56rem;
+    line-height: 0.54rem;
+    text-align: center;
+    margin-top: 0.15rem;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 0.28rem;
+}
+
+.tk_bDHItRState.getOrder {
+    color: #fff;
+    border-color: #ff6405;
+    background-color: #ff6405;
+}
+
+.tk_bDHItRState.toBeDone {
+    color: #f10215;
+    border-color: #f10215;
+}
+
+.tk_bDHItRState.handling {
+    color: #ff6405;
+    border-color: #ff6405;
+}
+
+.tk_bDHFoot {
+    width: 100%;
+    height: 0.8rem;
+}
+
+.tk_bDHFTxtWrapper {
+    width: 3.30rem;
+    height: 100%;
+    color: #666666;
+    line-height: 0.78rem;
+    border-radius: 0.40rem;
+    border: 1px solid #ddd;
+}
+
+.tk_bDHFTxtWrapper.on {
+    line-height: 0.80rem;
+    color: #fff;
+    background-color: #ff6405;
+    border: none;
+}
+
+.tk_bDHFTInnerWrap {
+    height: 100%;
+    text-align: center;
+}
+
+.tk_bDHFIcWrap {
+    display: inline-block;
+    width: 0.38rem;
+    height: 100%;
+    padding-top: 0.20rem;
+    margin-right: 0.10rem;
+    vertical-align: top;
+}
+
+.tk_bDHFIcon {
+    -webkit-appearance: none;
+    display: block;
+    width: 0.38rem;
+    height: 0.38rem;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    background-image: url("../images/tk_bDHFIcon.png");
+    background-size: 0.22rem 0.18rem;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.tk_bDHFIcon:checked {
+    background-image: url("../images/tk_bDHFIconChecked.png");
+    background-color: #fff;
+}
+
+.tk_bDHFTxt {
+    display: inline;
+    font-size: 0.36rem;
+    height: 100%;
+    vertical-align: 50%;
+}
+
+.tk_bDDHMenu {
+    margin-bottom: 0.30rem;
+    border-top: 1px solid #ddd;
+}
+
+/*******************************************报障详情（已完成）************************************************************/
+.tk_bDDDone {
+    min-height: 100%;
+    padding-bottom: 0.30rem;
+    background-color: #f2f2f2;
+}
